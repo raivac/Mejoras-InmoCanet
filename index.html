@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<title>Inmocanet Mejorado</title>
+</head>
+
+<body>
+
+	<header>
+
+		<div id="logo">
+			<img src="./img/logo.png">
+		</div>
+
+		<div id="banderas">
+			<div>
+				<img src="./img/bandera_esp.png" alt="bandera_esp">
+				<img src="./img/bandera_ing.png" alt="bandera_ing">
+			</div>
+
+			<div>	
+				<img src="./img/bandera_fra.png" alt="bandera_fra">
+				<img src="./img/bandera_ale.png" alt="bandera_ale">
+			</div>
+		</div>
+		
+	</header>
+
+
+
+	<nav>
+
+		<ul>
+			<li><a href="#"></a>HOME</li>
+			<li><a href="#"></a>VENTA</li>
+			<li><a href="#"></a>ALQUILER</li>
+			<li><a href="#"></a>CONTACTO</li>
+		</ul>
+
+		<div>
+			<input type="text" name="buscar">
+			<button>Buscar</button>
+		</div>
+		
+	</nav>
+
+
+
+	<main>
+
+		<div id="ficha">
+
+			<p>Parcela Urbana en Miramar</p>
+
+			<div>
+				<p>Ref: P333555A</p>
+
+				<p>+Info:</p>
+			</div>
+
+			<div id="fondo">
+				<img src="./img/Parcela1.jpg">
+			</div>
+			
+
+			<div id="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.1457606796803!2d-0.19051044870921632!3d38.96633957945977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e9b552c600d5%3A0xabebf5af686774a!2sPasseig%20de%20les%20Germanies%2C%20Gandia%2C%20Val%C3%A8ncia!5e0!3m2!1ses!2ses!4v1669997473633!5m2!1ses!2ses" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+
+			<div id="redes">
+				<img src="./img/facebook.png">
+				<img src="./img/twitter.png">
+				<img src="./img/instagram.png">
+			</div>
+			
+		</div>
+
+		<div id="contacto">
+
+			<p>Envia email a <a href="mailto:info@inmcan.eu">info@inmcan.eu</a></p>
+
+			<p>O rellena este Formulario:</p>
+
+			<form action="./procesa.php" method="GET">
+
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" autofocus="autofocus">
+				
+				<label for="email">Email:</label>
+				<input type="email" name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+				
+				<label for="mensaje">Mensaje:</label>
+				<textarea maxlength="300" placeholder="En el mensaje cita la referencia del inmueble"></textarea>
+
+				
+				<input type="checkbox" name="checkbox" value="checkbox" checked>
+				<label for="checkbox">Si, accepto la política de privacidad</label>
+
+				<input type="submit" name="enviar" value="Enviar">
+				
+			</form>
+			
+		</div>
+		
+	</main>
+
+
+	<footer>
+		<p>Politica de cookies</p>		
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+@font-face 
+{   font-family: youre;
+    src: url("../fonts/youre_gone.ttf");
+}
+
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+/************************************* HEADER **************************************/
+
+header{
+	display: flex;
+	background-color: white;
+	padding: 0.5rem 8rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header div#banderas div img{
+	padding: 0.5rem;
+}
+
+
+
+
+/************************************* NAV **************************************/
+
+nav{
+	display: flex;
+	flex-wrap: wrap;
+ 	background: linear-gradient(to right, black, white);
+	color: white;
+	font-size: 2rem;
+	padding: 0.5rem 8rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+}
+
+nav ul li{
+	margin: 0.5rem;
+	padding: 0.5rem;
+	cursor: pointer;
+	font-family: youre;
+}
+
+nav ul li:hover{
+	background-color: aliceblue;
+	color: black;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+
+nav div*{
+	display: flex;
+	margin: 0.5rem;
+}
+
+nav div button{
+	padding: 0.2rem 1rem;
+}
+
+
+/************************************* MAIN **************************************/
+/******************** FICHA *****************/
+main{
+	background-color: lightgrey;
+	padding: 0.5rem 8rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+main div#ficha{
+	width: 60%;
+	background-color: darkslategrey;
+	color: white;
+}
+
+main div#ficha>p{
+	padding: 0.5rem;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	font-weight: bold;
+}
+main div#ficha div{
+	display: flex;
+
+}
+
+main div#ficha div p{
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	text-align: center;
+	width: 100%;
+}
+
+main div#ficha div p:nth-child(2){
+	background-color: red;
+}
+
+main div#fondo img{
+	width: 100%;
+	opacity: 0.5;
+}
+main div#fondo img:hover{
+	width: 100%;
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+main div#redes{
+	display: flex;
+	justify-content: flex-end;
+}
+
+main div#redes img{
+	margin: 0.5rem;
+}
+
+main div#mapa{
+	justify-content: space-around;
+	margin: 5rem;
+}
+
+
+/******************** CONTACTO *****************/
+main div#contacto{
+	width: 30%;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 0 4rem;
+}
+
+/*he puesto el not porque se quedaba centrado el checkbox*/
+main div#contacto *:not(input[type="checkbox"]){
+	width: 100%;
+}
+
+main div#contacto p{
+	margin-bottom: 2rem;
+}
+
+main div#contacto input{
+	margin-bottom: 2rem;
+}
+
+main div#contacto textarea{
+	height: 15rem;
+}
+
+
+/******************** FOOTER *****************/
+
+footer p{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: small;
+	padding: 0.5rem;
+}
